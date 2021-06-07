@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Satisfy); 
+
+.App {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  height: 65px;
+  padding: 10px;
+  position: sticky;
+  background-color: rgb(164, 218, 233);
+  color: white;
+  font-size: 3rem;
+  font-family: 'Satisfy', cursive;
+  text-shadow: 1px 1px black;
+}
+
+.Content {
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.Films {
+  background: rgb(253, 243, 239);
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.Footer {
+  background-color: rgb(164, 218, 233);
+  min-height: 65px;
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 1px 1px black;
+}

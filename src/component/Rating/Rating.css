@@ -1,0 +1,34 @@
+:root {
+    --popcorn-size: 2rem;
+    --popcorn-color: lightgrey;
+    --popcorn-background: transparent;
+  }
+  
+.Rating {
+    font-size: var(--popcorn-size);
+    display: inline-block;
+    font-family: Times;
+    position: relative;
+}
+
+.Rating::before {
+ content: '🍿🍿🍿🍿🍿';
+ text-shadow: 1px 1px black;
+}
+
+.Popcorn {
+    --percent: calc(var(--rating) / 5 * 100%);
+    font-size: var(--popcorn-size);
+    display: inline-block;
+    font-family: Times;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Popcorn::before {
+  content: '🍿🍿🍿🍿🍿';
+  background: linear-gradient(90deg, var(--popcorn-background) var(--percent), var(--popcorn-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
